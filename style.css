@@ -19,7 +19,7 @@ body{
      background-image: url(assets/wallpapers/day.jpg);
      background-size: cover;
      background-position: center;
-
+     transition:background-image .5s ease;
      display: flex;
      flex-direction: column;
 }
@@ -190,4 +190,21 @@ body{
     to{
         width: 100%;
     }
+}
+
+.theme-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.theme-buttons button{
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    transition: .3s;
+}
+.theme-buttons button:hover{
+    transform: scale(1.05);
 }
