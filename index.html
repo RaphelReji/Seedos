@@ -9,14 +9,27 @@
 </head>
 
 <body>
+    <div id="intro">
+
+       <img src="assets/intro/seed.png" alt="Seed">
+       
+       <h1>SeedOS</h1>
+       <p>Every great tree start as a seed.</p>
+
+       <div class="loader">
+        <div class="progress"></div>
+
+       </div>
+
+    </div>
     
-    <div class="desktop">
+    <div class="desktop" id="desktop">
 
         <header class="top-bar">
 
           <h1>SeedOS</h1>  
-         <div class="time">
-            10.30 AM
+         <div class="time" id="clock">
+            00:00
          </div>
         </header>
 
@@ -40,6 +53,10 @@
       </main>  
 
       <footer class="dock">
+        <div class="theme-buttons">
+            <button id="day-btn">🌞 Day</button>
+            <button id="night-btn">🌙 Night</button>
+        </div>
         <button class="home-btn">
             Home
         </button>
