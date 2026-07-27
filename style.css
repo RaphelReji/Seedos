@@ -1,4 +1,8 @@
+:root{
 
+    --primary:#6BBF59;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -178,7 +182,7 @@ body{
 .progress{
     width: 0;
     height: 100%;
-    background: #6bbf59;
+    background:var(--primary);
 
     animation: loading 3s linear forwards;
 }
@@ -224,7 +228,7 @@ body{
 }
 
 .window-header{
-    background: #6BBF59;
+    background:var(--primary);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -303,5 +307,20 @@ textarea{
 }
 
 .green{
-      background:#6BBF59;
+      background:var(--primary);
+}
+
+.blue{
+
+    background: #4A90E2;
+}
+
+.orange{
+
+    background:#F4A261;
+
+}
+
+.window-body h3{
+    margin: 15px 0 10px;
 }

@@ -102,3 +102,75 @@ journalText.addEventListener("input",()=>{
     localStorage.setItem("journal",journalText.value);
 
 });
+
+
+
+
+
+const settingsIcon = document.getElementById("settings-icon");
+
+const settingsWindow = document.getElementById("settings-window");
+
+const closeSettings = document.getElementById("close-settings");
+
+settingsIcon.addEventListener("click",()=>{
+
+    settingsWindow.style.display="block";
+
+});
+
+closeSettings.addEventListener("click",()=>{
+
+    settingsWindow.style.display="none";
+
+});
+
+// Wallpaper Buttons
+
+const dayTheme=document.getElementById("day-theme");
+
+const nightTheme=document.getElementById("night-theme");
+
+dayTheme.addEventListener("click",()=>{
+
+    desktop.style.backgroundImage=
+    "url('assets/wallpapers/day.jpg')";
+
+});
+
+nightTheme.addEventListener("click",()=>{
+
+    desktop.style.backgroundImage=
+    "url('assets/wallpapers/night.jpg')";
+
+});
+
+
+
+const root=document.documentElement;
+
+document.querySelector(".green").onclick=()=>{
+
+    root.style.setProperty("--primary","#6BBF59");
+
+}
+
+document.querySelector(".blue").onclick=()=>{
+
+    root.style.setProperty("--primary","#4A90E2");
+
+}
+
+document.querySelector(".orange").onclick=()=>{
+
+    root.style.setProperty("--primary","#F4A261");
+
+}
+
+document.getElementById("reset-theme").onclick=()=>{
+
+    root.style.setProperty("--primary","#6BBF59");
+
+    desktop.style.backgroundImage="url('assets/wallpapers/day.jpg')";
+
+}
