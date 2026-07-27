@@ -68,3 +68,37 @@ closeGrow.addEventListener("click",()=>{
     growWindow.style.display="none";
 
 });
+
+
+
+const journalIcon = document.getElementById("journal-icon");
+
+const journalWindow = document.getElementById("journal-window");
+
+const closeJournal = document.getElementById("close-journal");
+
+const journalText = document.getElementById("journal-text");
+
+journalIcon.addEventListener("click",()=>{
+
+    journalWindow.style.display="block";
+
+});
+
+closeJournal.addEventListener("click",()=>{
+
+    journalWindow.style.display="none";
+
+});
+
+// Load saved note
+
+journalText.value = localStorage.getItem("journal") || "";
+
+// Save while typing
+
+journalText.addEventListener("input",()=>{
+
+    localStorage.setItem("journal",journalText.value);
+
+});
