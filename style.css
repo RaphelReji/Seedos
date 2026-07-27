@@ -287,3 +287,21 @@ textarea{
 
     background: transparent;
 }
+
+.colors{
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.colors button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.green{
+      background:#6BBF59;
+}
