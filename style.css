@@ -208,3 +208,62 @@ body{
 .theme-buttons button:hover{
     transform: scale(1.05);
 }
+
+.window{
+    position:absolute;
+    top: 100px;
+    left: 150px;
+    width: 420px;
+    background: white;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0,.25);
+    display: none;
+}
+
+.window-header{
+    background: #6BBF59;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.window-header button{
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.window-body{
+    padding: 20px;
+}
+
+.folder{
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    background: #F2F8F0;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.folder:hover{
+
+    background:#DDF0D7;
+
+}

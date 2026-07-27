@@ -49,3 +49,22 @@ nightBtn.addEventListener("click",()=>{
     "url('assets/wallpapers/night.jpg')";
 
 });
+
+
+const growIcon = document.getElementById("grow-icon");
+
+const growWindow = document.getElementById("grow-window");
+
+const closeGrow = document.getElementById("close-grow");
+
+growIcon.addEventListener("click",()=>{
+
+    growWindow.style.display="block";
+
+});
+
+closeGrow.addEventListener("click",()=>{
+
+    growWindow.style.display="none";
+
+});
