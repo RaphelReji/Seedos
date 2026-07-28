@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{
@@ -164,12 +167,12 @@ body{
 #intro h1{
     font-size: 42px;
 
-    color: #3f7d3a;
+    color: #60c559;
 }
 
 #intro p{
     margin-top: 10px;
-    color: #555;
+    color: #dfdcdc;
 }
 
 
@@ -246,6 +249,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    cursor:all-scroll;
 }
 
 .window-header button{
@@ -413,4 +417,29 @@ border-radius: 10px;
     color: white;
 }
 
-h31
+#h31{
+    font-family: monospace;
+}
+
+#day-btn{
+    background-color: #0f233a;
+    border:solid 2px white;
+  
+}
+#day-btn:hover{
+    background-color: white;
+    border:solid 2px rgb(0, 0, 0);
+}
+
+#night-btn{
+    background-color: #5e494b;
+    border: solid 2px white;
+}
+#night-btn:hover{
+    background-color: white;
+    border:solid 2px rgb(0, 0, 0);
+}
+
+button{
+    font-family: monospace;
+}
