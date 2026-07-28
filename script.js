@@ -1,4 +1,4 @@
-// Intro Screen
+// Intro Screen,i dont like it
 
 const intro = document.getElementById("intro");
 
@@ -6,7 +6,7 @@ setTimeout(() => {
     intro.style.display = "none";
 },3000);
 
-// Live Clock
+// Live Clock,hi
 
 const clock = document.getElementById("clock");
 
@@ -28,7 +28,7 @@ updateClock();
 
 setInterval(updateClock,1000);
 
-// Wallpaper Switcher
+// Wallpaper Switcher,switch on
 
 const desktop = document.getElementById("desktop");
 
@@ -108,11 +108,11 @@ closeJournal.addEventListener("click",()=>{
 
 });
 
-// Load saved note
+// Load saved note .savving
 
 journalText.value = localStorage.getItem("journal") || "";
 
-// Save while typing
+// Save while typing yat
 
 journalText.addEventListener("input",()=>{
 
@@ -233,3 +233,28 @@ function dragWindow(windowElement,header){
     });
 
 }
+
+
+dragWindow(
+    growWindow,
+    growWindow.querySelector(".window-header")
+);
+
+dragWindow(
+    journalWindow,
+    journalWindow.querySelector(".window-header")
+);
+
+dragWindow(
+    settingsWindow,
+    settingsWindow.querySelector(".window-header")
+);
+
+
+setTimeout(()=>{
+
+    intro.style.display="none";
+
+    alert(" Welcome to SeedOS!");
+
+},3000);
