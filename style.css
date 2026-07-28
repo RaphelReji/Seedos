@@ -227,7 +227,7 @@ body{
     transform: scale(.9);
     transition: .25s;
 }
-.windows.show{
+.window.show{
     display: block;
     opacity: 1;
     transform: scale(1);

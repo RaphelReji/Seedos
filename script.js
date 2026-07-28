@@ -98,6 +98,14 @@ closeJournal.addEventListener("click",()=>{
 
     journalWindow.classList.remove("show");
 
+    journalWindow.addEventListener("mousedown",()=>{
+
+    z++;
+
+    journalWindow.style.zIndex=z;
+
+});
+
 });
 
 // Load saved note
@@ -131,6 +139,14 @@ settingsIcon.addEventListener("click",()=>{
 closeSettings.addEventListener("click",()=>{
 
     settingsWindow.classList.remove("show");
+
+    settingsWindow.addEventListener("mousedown",()=>{
+
+    z++;
+
+    settingsWindow.style.zIndex=z;
+
+});
 
 });
 
@@ -181,5 +197,39 @@ document.getElementById("reset-theme").onclick=()=>{
     root.style.setProperty("--primary","#6BBF59");
 
     desktop.style.backgroundImage="url('assets/wallpapers/day.jpg')";
+
+}
+
+
+
+function dragWindow(windowElement,header){
+
+    let offsetX=0;
+    let offsetY=0;
+    let dragging=false;
+
+    header.addEventListener("mousedown",(e)=>{
+
+        dragging=true;
+
+        offsetX=e.clientX-windowElement.offsetLeft;
+        offsetY=e.clientY-windowElement.offsetTop;
+
+    });
+
+    document.addEventListener("mousemove",(e)=>{
+
+        if(!dragging) return;
+
+        windowElement.style.left=(e.clientX-offsetX)+"px";
+        windowElement.style.top=(e.clientY-offsetY)+"px";
+
+    });
+
+    document.addEventListener("mouseup",()=>{
+
+        dragging=false;
+
+    });
 
 }
