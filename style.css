@@ -443,3 +443,44 @@ border-radius: 10px;
 button{
     font-family: monospace;
 }
+
+#j1{
+    font-family: cursive;
+}
+
+#s1{
+    font-family: monospace;
+    color: black;
+   font-size: large;
+   font-weight: bold;
+}
+
+#close-grow{
+    color: rgb(255, 253, 253);
+    background-color: rgb(49, 49, 49);
+    padding: 0 4px;
+    border-radius:5px;
+}
+#close-grow:hover{
+    background-color: rgba(216, 6, 6, 0.932);
+}
+
+#close-settings{
+    color: rgb(255, 253, 253);
+    background-color: rgb(49, 49, 49);
+    padding: 0 4px;
+    border-radius:5px;
+}
+#close-settings:hover{
+    background-color: rgba(216, 6, 6, 0.932);
+}
+
+#close-journal{
+    color: rgb(255, 253, 253);
+    background-color: rgb(49, 49, 49);
+    padding: 0 4px;
+    border-radius:5px;
+}
+#close-journal:hover{
+    background-color: rgba(216, 6, 6, 0.932);
+}
