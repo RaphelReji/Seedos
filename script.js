@@ -59,17 +59,26 @@ const closeGrow = document.getElementById("close-grow");
 
 growIcon.addEventListener("click",()=>{
 
-    growWindow.style.display="block";
+    growWindow.classList.add("show");
 
 });
 
 closeGrow.addEventListener("click",()=>{
 
-    growWindow.style.display="none";
+    growWindow.classList.remove("show");
+    
+    growWindow.addEventListener("mousedown",()=>{
+
+    z++;
+
+    growWindow.style.zIndex=z;
+
+});
 
 });
 
 
+let z = 100;
 
 const journalIcon = document.getElementById("journal-icon");
 
@@ -81,13 +90,13 @@ const journalText = document.getElementById("journal-text");
 
 journalIcon.addEventListener("click",()=>{
 
-    journalWindow.style.display="block";
+    journalWindow.classList.add("show");
 
 });
 
 closeJournal.addEventListener("click",()=>{
 
-    journalWindow.style.display="none";
+    journalWindow.classList.remove("show");
 
 });
 
@@ -115,13 +124,13 @@ const closeSettings = document.getElementById("close-settings");
 
 settingsIcon.addEventListener("click",()=>{
 
-    settingsWindow.style.display="block";
+    settingsWindow.classList.add("show");
 
 });
 
 closeSettings.addEventListener("click",()=>{
 
-    settingsWindow.style.display="none";
+    settingsWindow.classList.remove("show");
 
 });
 
