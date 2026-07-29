@@ -486,17 +486,17 @@ button{
 }
 
 .time{
-    font-family:monospace;
+    height: 60px;
+    font-family:cursive;
     font-size: 25px;
-    background-color: #ffffffea;
+    
     padding: 10px;
-    border-radius: 20px;
     border-style:bold 2px black;
     color: black;
 }
 .time:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 248, 248);
+    background-color: rgba(151, 149, 149, 0.397);
+    
 }
 
 #head1{
@@ -532,4 +532,19 @@ button{
     color: black;
     background-color: white;
     border:solid 2px rgb(0, 0, 0);
+}
+
+#last{
+    font-family:cursive;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.918);
+    text-decoration: underline 3px;
+    
+    background: blur(10px);
+    
+}
+
+#last:hover{
+    color: white;
+    text-decoration: line-through black 3px;
 }
