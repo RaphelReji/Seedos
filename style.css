@@ -94,6 +94,7 @@ body{
 .icon:hover{
     transform:translateY(-10px) scale(1.1);
     filter:drop-shadow(0 8px 15px rgba(0,0,0,.25));
+    color: rgb(0, 174, 255);
 }
 
 .dock{
@@ -115,26 +116,6 @@ body{
 }
 
 
-.home-btn{
-
-    border: none;
-
-    background: white;
-
-    padding: 10px 18px;
-    border-radius: 12px;
-
-    cursor: pointer;
-
-    font-weight: bold;
-
-    transition: 3s;
-}
-
-.home-btn:hover{
-    transform: scale(1.05);
-
-}
 
 #intro{
     position: fixed;
@@ -213,7 +194,7 @@ body{
 .theme-buttons button{
     border: none;
     padding: 8px 14px;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     background: white;
     transition: .3s;
@@ -422,22 +403,30 @@ border-radius: 10px;
 }
 
 #day-btn{
-    background-color: #0f233a;
+    width: 45px;
+    height: 45px;
+    background-color: #3ebd0c;
     border:solid 2px white;
+    transition: 0.3s;
   
 }
 #day-btn:hover{
+    transform: translateY(-10px);
     background-color: white;
     border:solid 2px rgb(0, 0, 0);
 }
 
 #night-btn{
-    background-color: #5e494b;
+    width: 45px;
+    height: 45px;
+    background-color: #0b8f12;
     border: solid 2px white;
+    transition: 0.3s;
 }
 #night-btn:hover{
     background-color: white;
     border:solid 2px rgb(0, 0, 0);
+    transform: translateY(-10px);
 }
 
 button{
@@ -502,10 +491,45 @@ button{
     background-color: #ffffffea;
     padding: 10px;
     border-radius: 20px;
-    border-style:dashed;
+    border-style:bold 2px black;
     color: black;
 }
 .time:hover{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 248, 248);
+}
+
+#head1{
+    font-family:cursive;
+    font-weight: bold;
+    color: rgb(76, 248, 76);
+    transition: 0.3s;
+}
+
+#head1:hover{
+    font-family:cursive;
+    font-weight: bold;
+    color: rgb(4, 1, 184);
+   transform: translateX(10px);
+}
+
+
+
+#guide-btn{
+    font-family: cursive;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    color: white;
+    background-color: #177226;
+    border-radius: 30px;
+    border:solid 2px rgb(255, 255, 255);
+    transition: 0.3s;
+  
+}
+#guide-btn:hover{
+    transform: translateY(-10px);
+    color: black;
+    background-color: white;
+    border:solid 2px rgb(0, 0, 0);
 }
