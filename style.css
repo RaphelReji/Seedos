@@ -484,3 +484,28 @@ button{
 #close-journal:hover{
     background-color: rgba(216, 6, 6, 0.932);
 }
+
+#m1{
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.folder{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.time{
+    font-family:monospace;
+    font-size: 25px;
+    background-color: #ffffffea;
+    padding: 10px;
+    border-radius: 20px;
+    border-style:dashed;
+    color: black;
+}
+.time:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+}
