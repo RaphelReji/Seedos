@@ -150,6 +150,33 @@ closeSettings.addEventListener("click",()=>{
 
 });
 
+
+
+const guideIcon = document.getElementById("guide-icon");
+
+const guideWindow = document.getElementById("guide-window");
+
+const closeguide = document.getElementById("close-guide");
+
+guideIcon.addEventListener("click",()=>{
+
+    guideWindow.classList.add("show");
+
+});
+
+closeguide.addEventListener("click",()=>{
+
+    guideWindow.classList.remove("show");
+
+    guideWindow.addEventListener("mousedown",()=>{
+
+    z++;
+
+    guideWindow.style.zIndex=z;
+
+});
+
+});
 // Wallpaper Buttons
 
 const dayTheme=document.getElementById("day-theme");
@@ -202,6 +229,7 @@ document.getElementById("reset-theme").onclick=()=>{
 
 
 
+
 function dragWindow(windowElement,header){
 
     let offsetX=0;
@@ -250,6 +278,10 @@ dragWindow(
     settingsWindow.querySelector(".window-header")
 );
 
+dragWindow(
+    guideWindow,
+    guideWindow.querySelector(".window-header")
+);
 
 setTimeout(()=>{
 
@@ -258,3 +290,6 @@ setTimeout(()=>{
     alert(" Welcome to SeedOSv1! its a beginer os");
 
 },3000);
+
+
+
