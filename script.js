@@ -290,6 +290,3 @@ setTimeout(()=>{
     alert(" Welcome to SeedOSv1! its a beginer os");
 
 },3000);
-
-
-
