@@ -566,3 +566,54 @@ button{
 #close-guide:hover{
     background-color: rgba(216, 6, 6, 0.932);
 }
+
+#guide-window{
+    background-image: url(assets/wallpapers/night.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.heading:hover{
+    color:greenyellow;
+    transform:translateY(-10px);
+    text-decoration:underline white 3px;
+}
+.about{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 45%;
+    border-radius: 20px;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.about:hover{
+    color: #0b8f12;
+}
+.abouttext{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: #DDF0D7;
+    font-family: monospace;
+    text-align: justify;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+.abouttext:hover{
+    transform: scale(1.15);
+}

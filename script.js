@@ -284,6 +284,12 @@ makeDraggable(
     settingsWindow.querySelector(".window-header")
 );
 
+makeDraggable(
+    guideWindow,
+    guideWindow.querySelector(".window-header")
+);
+
+
 
 
 
