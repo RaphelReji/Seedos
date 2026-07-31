@@ -228,60 +228,64 @@ document.getElementById("reset-theme").onclick=()=>{
 }
 
 
+function makeDraggable(windowElement, header) {
 
+    let isDragging = false;
+    let offsetX = 0;
+    let offsetY = 0;
 
-function dragWindow(windowElement,header){
+    header.addEventListener("mousedown", (e) => {
 
-    let offsetX=0;
-    let offsetY=0;
-    let dragging=false;
+        isDragging = true;
 
-    header.addEventListener("mousedown",(e)=>{
+        offsetX = e.clientX - windowElement.offsetLeft;
+        offsetY = e.clientY - windowElement.offsetTop;
 
-        dragging=true;
-
-        offsetX=e.clientX-windowElement.offsetLeft;
-        offsetY=e.clientY-windowElement.offsetTop;
-
-    });
-
-    document.addEventListener("mousemove",(e)=>{
-
-        if(!dragging) return;
-
-        windowElement.style.left=(e.clientX-offsetX)+"px";
-        windowElement.style.top=(e.clientY-offsetY)+"px";
+        windowElement.style.transition = "none";
+        windowElement.style.zIndex = "999";
 
     });
 
-    document.addEventListener("mouseup",()=>{
+    document.addEventListener("mousemove", (e) => {
 
-        dragging=false;
+        if (!isDragging) return;
+
+        const x = e.clientX - offsetX;
+        const y = e.clientY - offsetY;
+
+        windowElement.style.left = x + "px";
+        windowElement.style.top = y + "px";
+
+    });
+
+    document.addEventListener("mouseup", () => {
+
+        isDragging = false;
+
+        windowElement.style.transition = "0.2s ease";
 
     });
 
 }
 
 
-dragWindow(
+makeDraggable(
     growWindow,
     growWindow.querySelector(".window-header")
 );
 
-dragWindow(
+makeDraggable(
     journalWindow,
     journalWindow.querySelector(".window-header")
 );
 
-dragWindow(
+makeDraggable(
     settingsWindow,
     settingsWindow.querySelector(".window-header")
 );
 
-dragWindow(
-    guideWindow,
-    guideWindow.querySelector(".window-header")
-);
+
+
 
 setTimeout(()=>{
 
