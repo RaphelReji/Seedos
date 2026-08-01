@@ -1,10 +1,147 @@
 body{
     margin: 0;
-    background-color: rgb(181, 255, 159);
+    background-color:rebeccapurple;
+    color: rgb(218, 214, 214);
 }
 #flex{
-    background-color: blue;
-    height: 20px;
-    width: 100%;
+    background-color: rgba(241, 230, 230, 0.61);
+    height: 35px;
     
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+a{
+    
+    font-family:'Times New Roman', Times, serif;
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    text-decoration: none;
+}
+a:hover{
+    color: gold;
+}
+
+.headline{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.headline:hover{
+    color: rgb(20, 204, 20);
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: fit-content ;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 254, 0.075);
+    color: black;
+    border: groove 2px;
+    transition: 0.3s;
+}
+.card:hover{
+     background-color: rgba(255, 255, 254, 0.164);
+     transform: translatey(-10px)scale(1.15);
+}
+.cah{
+    font-size: 20px;
+    padding: 10px;
+    color: wheat;
+}
+
+.textcard{
+    padding: 10px;
+    text-transform: capitalize;
+    text-align:start;
+    line-height: 25PX;
+}
+
+.apps{
+    display: flex;
+    gap: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+   
+}
+
+.grow{
+     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+   transition: 0.3s;
+   border: solid white 2px;
+}
+.grow:hover{
+    transform: translateX(70px);
+    border: dotted peachpuff 2px;
+    background-color: rgba(182, 16, 16, 0.5);
+}
+.journal{
+    border-radius: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.623);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.journal:hover{
+    transform: translateY(-70px);
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.settings{
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.623);
+    transition: 0.3S;
+}
+.settings:hover{
+    transform: translateX(-70px);
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.tips{
+    background-color: bisque;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    border-radius:15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    transition: 0.3s;
+
+}
+.tips:hover{
+    transform: scale(1.06);
+}
+.texttips{
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    font-family: monospace;
+    line-height: 30px;
+}
+.tipsh{
+    padding: 10px;
+    color: black;
+    font-family: cursive;
+    text-decoration: underline;
 }
