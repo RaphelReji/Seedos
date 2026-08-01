@@ -46,7 +46,7 @@ a:hover{
     width: fit-content ;
     text-align: center;
     border-radius: 20px;
-    background-color: rgba(255, 255, 254, 0.075);
+    background-color: bisque;
     color: black;
     border: groove 2px;
     transition: 0.3s;
@@ -56,12 +56,16 @@ a:hover{
      transform: translatey(-10px)scale(1.15);
 }
 .cah{
+    text-decoration: underline;
+    font-family: cursive;
     font-size: 20px;
     padding: 10px;
-    color: wheat;
+    color: rgb(0, 0, 0);
 }
 
 .textcard{
+    font-size: 18px;
+    font-family: monospace;
     padding: 10px;
     text-transform: capitalize;
     text-align:start;
