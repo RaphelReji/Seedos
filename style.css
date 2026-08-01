@@ -524,25 +524,6 @@ button{
 
 
 
-#guide-btn{
-    font-family: cursive;
-    width: 45px;
-    height: 45px;
-    padding: 5px;
-    color: white;
-    background-color: #177226;
-    border-radius: 30px;
-    border:solid 2px rgb(255, 255, 255);
-    transition: 0.3s;
-  
-}
-#guide-btn:hover{
-    transform: translateY(-10px);
-    color: black;
-    background-color: white;
-    border:solid 2px rgb(0, 0, 0);
-}
-
 #last{
     font-family:cursive;
     font-weight: 700;
@@ -568,7 +549,7 @@ button{
 }
 
 #guide-window{
-    background-image: url(assets/wallpapers/night.jpg);
+   background-color: rgba(128, 128, 128, 0.377);
     background-position: center;
     background-size: cover;
     color: white;
@@ -616,4 +597,45 @@ button{
 }
 .abouttext:hover{
     transform: scale(1.15);
+}
+
+.buttonend{
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+#guide-btn{
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(240, 224, 11);
+    background-color: #05ad37;
+    border-radius: 30px;
+    border:solid 2px rgb(255, 255, 255);
+    transition: 0.3s;
+    
+  
+}
+#guide-btn:hover{
+    transform: translateY(-10px);
+    opacity: 90%;
+    background-color: #0c1ebd;
+}
+
+#journal-window{
+    background-color: rgba(136, 135, 135, 0.418);
+    background: blur(30px);
+    border: solid 2px white;
+    
+}
+#settings-window{
+background-color: rgba(128, 128, 128, 0.349);
+color: white;
+}
+
+#grow-window{
+    background-color: rgba(128, 128, 128, 0.466);
 }
