@@ -641,3 +641,13 @@ color: white;
 #grow-window{
     background-color: rgba(128, 128, 128, 0.466);
 }
+
+.pet{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    bottom:18px;
+    right:850px;
+
+}

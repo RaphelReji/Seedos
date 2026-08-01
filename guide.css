@@ -216,3 +216,14 @@ a:hover{
     font-size: 18px;
     color: rgb(192, 37, 37);
 }
+.hcimg{
+    position:absolute;
+    bottom: 0;
+    width: 256px;
+    float:left;
+}
+footer{
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 10px;
+}
