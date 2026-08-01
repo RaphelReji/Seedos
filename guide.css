@@ -1,3 +1,10 @@
 body{
-    background-image: url(assets/logo/intro1.jpg);
+    margin: 0;
+    background-color: rgb(181, 255, 159);
+}
+#flex{
+    background-color: blue;
+    height: 20px;
+    width: 100%;
+    
 }

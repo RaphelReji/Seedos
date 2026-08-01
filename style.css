@@ -560,7 +560,7 @@ button{
     font-family: monospace;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: rgb(2, 120, 255);
     transition: 0.5s;
     margin-bottom: 20px;
 }
@@ -581,15 +581,16 @@ button{
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
+    color: black;
 }
 .about:hover{
-    color: #0b8f12;
+    color: #f6f7f6;
 }
 .abouttext{
     border-radius: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.603);
-    color: #DDF0D7;
+    color: #ffffff;
     font-family: monospace;
     text-align: justify;
     transition: 0.5s ease;
@@ -600,8 +601,9 @@ button{
 }
 
 .buttonend{
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
+    color: black;
 }
 
 
@@ -622,7 +624,7 @@ button{
 #guide-btn:hover{
     transform: translateY(-10px);
     opacity: 90%;
-    background-color: #0c1ebd;
+    background-color: #0c7cbd;
 }
 
 #journal-window{
