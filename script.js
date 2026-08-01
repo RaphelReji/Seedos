@@ -289,14 +289,3 @@ makeDraggable(
     guideWindow.querySelector(".window-header")
 );
 
-
-
-
-
-setTimeout(()=>{
-
-    intro.style.display="none";
-
-    alert(" Welcome to SeedOSv1! its a beginer os");
-
-},3000);
