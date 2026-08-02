@@ -289,4 +289,36 @@ makeDraggable(
     guideWindow.querySelector(".window-header")
 );
 
+const pet = document.getElementById("pet");
 
+pet.style.position = "fixed";
+pet.style.left = "100px";
+pet.style.top ="100px";
+
+let x =100;
+let y =100;
+let direction = 1;
+
+function walk(){
+    x += direction * 2;
+
+
+    if (x >= window.innerWidth - pet.offsetWidth) {
+        direction = -1;
+        pet.style.transform = "scaleX(-1)";
+
+    }
+
+      if (x <= 0) {
+        direction = 1;
+        pet.style.transform = "scaleX(1)";
+        
+    }
+
+    y = 100 + Math.sin(x / 15)*8;
+
+
+    pet.style.left = x + "px";
+    pet.style.top = y + "px";
+}
+ setInterval(walk,20);

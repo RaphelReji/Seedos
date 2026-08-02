@@ -651,3 +651,11 @@ color: white;
     right:850px;
 
 }
+
+.pet{
+    cursor:grab;
+}
+
+.pet:active{
+    cursor:grabbing;
+}
