@@ -289,36 +289,39 @@ makeDraggable(
     guideWindow.querySelector(".window-header")
 );
 
+
 const pet = document.getElementById("pet");
 
 pet.style.position = "fixed";
-pet.style.left = "100px";
-pet.style.top ="100px";
 
-let x =100;
-let y =100;
-let direction = 1;
+let isDragging = false;
+let offsetX = 0;
+let offsetY = 0;
 
-function walk(){
-    x += direction * 2;
+pet.addEventListener("mousedown", (e) => {
 
+    isDragging = true;
 
-    if (x >= window.innerWidth - pet.offsetWidth) {
-        direction = -1;
-        pet.style.transform = "scaleX(-1)";
+    offsetX = e.clientX - pet.offsetLeft;
+    offsetY = e.clientY - pet.offsetTop;
 
-    }
+    pet.style.cursor = "grabbing";
 
-      if (x <= 0) {
-        direction = 1;
-        pet.style.transform = "scaleX(1)";
-        
-    }
+});
 
-    y = 100 + Math.sin(x / 15)*8;
+document.addEventListener("mousemove", (e) => {
 
+    if (!isDragging) return;
 
-    pet.style.left = x + "px";
-    pet.style.top = y + "px";
-}
- setInterval(walk,20);
+    pet.style.left = (e.clientX - offsetX) + "px";
+    pet.style.top = (e.clientY - offsetY) + "px";
+
+});
+
+document.addEventListener("mouseup", () => {
+
+    isDragging = false;
+
+    pet.style.cursor = "grab";
+
+});

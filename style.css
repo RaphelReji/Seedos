@@ -642,10 +642,14 @@ color: white;
     background-color: rgba(128, 128, 128, 0.466);
 }
 
+
+
 #pet{
-    width: 80px;
     position: fixed;
+    left: 1000px;
+    top: 850px;
+    width: 64px;
+    cursor: grab;
     user-select: none;
-    pointer-events: none;
     z-index: 9999;
 }
