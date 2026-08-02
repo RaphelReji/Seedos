@@ -642,20 +642,10 @@ color: white;
     background-color: rgba(128, 128, 128, 0.466);
 }
 
-.pet{
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    position:fixed;
-    bottom:18px;
-    right:850px;
-
-}
-
-.pet{
-    cursor:grab;
-}
-
-.pet:active{
-    cursor:grabbing;
+#pet{
+    width: 80px;
+    position: fixed;
+    user-select: none;
+    pointer-events: none;
+    z-index: 9999;
 }
