@@ -24,6 +24,7 @@ SeedOS is a web based OS with nature theme.I created this project to study web d
 - simple dock in the bottom with day-night btn
 - Transparent windows
 - At last a cute dragable dancing pet
+- and a pet i drawed in piskel
 - etc.......
 ---
 
@@ -54,6 +55,10 @@ SeedOS is a web based OS with nature theme.I created this project to study web d
 - Smooth transitions
 
 ---
+
+## Ai Usage
+
+I used ai to create the icons because of this specific theme and i dont get the exact size image in open source.next time i will design it my self for next project.
 
 ##  License
 
