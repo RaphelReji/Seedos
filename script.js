@@ -325,3 +325,5 @@ document.addEventListener("mouseup", () => {
     pet.style.cursor = "grab";
 
 });
+
+

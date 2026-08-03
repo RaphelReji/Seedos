@@ -653,3 +653,18 @@ color: white;
     user-select: none;
     z-index: 9999;
 }
+
+
+#pett{
+    position: fixed;
+    left: 1100px;
+    top: 865px;
+    width: 40px;
+    cursor: grab;
+    user-select: none;
+    z-index: 9999;
+    transition: 0.3s;
+}
+#pett:hover{
+    transform: scale(1.75);
+}
