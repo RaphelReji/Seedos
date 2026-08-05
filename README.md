@@ -58,7 +58,7 @@ SeedOS is a web based OS with nature theme.I created this project to study web d
 
 ## Ai Usage
 
-I used ai to create the icons because of this specific theme and i dont get the exact size image in open source.next time i will design it my self for next project.
+I used ai to create the icons because of this specific theme and i dont get the exact of size image in open source.Next time i will design it my self for next project.
 
 ##  License
 
